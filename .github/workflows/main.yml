@@ -9,8 +9,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Run a one-line script
-      run: echo python --version
+    - name: Python version
+      run: echo python -V
+    - name: Pip version
+      run: echo pip --version
     - name: Install mcdocs
       run:  pip install mkdocs
     - name: Init mcdocs
