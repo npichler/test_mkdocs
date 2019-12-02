@@ -14,7 +14,8 @@ jobs:
     - name: Pip version
       run: pip --version
     - name: Install mcdocs
-      run:  pip install mkdocs
+      run: |
+       pip install mkdocs
        mkdocs new .
        mkdocs serve 
        mkdocs gh-deploy
