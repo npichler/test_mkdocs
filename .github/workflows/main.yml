@@ -13,6 +13,10 @@ jobs:
       run: echo python --version
     - name: Install mcdocs
       run:  pip install mkdocs
+    - name: Init mcdocs
+      run:  mcdocs new . 
+    - name: Run local server
+      run: mkdocs serve 
     - name: Deploy page
       run: mkdocs gh-deploy
       
