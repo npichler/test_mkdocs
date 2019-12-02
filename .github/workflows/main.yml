@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Python version
-      run: python -V
+      run: python3 -V
     - name: Pip version
       run: pip --version
     - name: Install mcdocs
