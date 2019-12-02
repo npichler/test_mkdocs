@@ -15,10 +15,8 @@ jobs:
       run: pip --version
     - name: Install mcdocs
       run:  pip install mkdocs
-    - name: Init mkdocs
-      run:  mkdocs new . 
-    - name: Run local server
-      run: mkdocs serve 
-    - name: Deploy page
-      run: mkdocs gh-deploy
+       mkdocs new .
+       mkdocs serve 
+       mkdocs gh-deploy
+
       
