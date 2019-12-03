@@ -9,6 +9,7 @@ install:
 
 script: 
     - mkdir docs
+    - ls
     - mv monticore-grammar docs/monticore-grammar
     - mv monticore-runtime docs/monticore-runtime
     - mv 00.org docs/00.org
