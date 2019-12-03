@@ -7,7 +7,12 @@ branches: master # Set the branch to build from
 install:
     - pip install mkdocs-bootstrap
 
-script: true # Skip script (Don't use this if one already exists)
+script: 
+    - mkdir docs
+    - mv monticore-grammar docs/monticore-grammar
+    - mv monticore-runtime docs/monticore-runtime
+    - mv 00.org docs/00.org
+    - mv *.md docs
 
 before_deploy:
     - mkdocs build --verbose --clean --strict # Build a local version of the docs
